@@ -7,7 +7,6 @@ Before you start, have `rustorb` and `rustorb-idl` installed
 ## Generate the code
 
 ```sh
-mkdir -p gen
 rustorb-idl -bpython -C gen Echo.idl "$(rustorb-idl --idl-dir)/CosNaming.idl"
 export PYTHONPATH=gen
 ```

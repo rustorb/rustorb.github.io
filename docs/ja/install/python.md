@@ -28,7 +28,6 @@ rustorb-idl --version
 ## IDL からコードを生成する
 
 ```sh
-mkdir -p gen
 rustorb-idl -bpython -C gen Echo.idl
 export PYTHONPATH=gen
 ```

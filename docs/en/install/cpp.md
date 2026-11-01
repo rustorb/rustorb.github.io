@@ -11,36 +11,36 @@ later, and [`rustorb-idl`](index.md#the-idl-compiler-rustorb-idl).
 ## Download
 
 Pick the archive for your platform from the
-[release](https://github.com/rustorb/rustorb/releases/tag/v0.1.0) and unpack
+[release](https://github.com/rustorb/rustorb/releases/tag/v0.1.1) and unpack
 it where you like, for example `$HOME/rustorb`:
 
 === "Linux x86_64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-linux-x86_64.tar.gz
-    tar xzf rustorb-native-0.1.0-linux-x86_64.tar.gz
-    mv rustorb-native-0.1.0-linux-x86_64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-linux-x86_64.tar.gz
+    tar xzf rustorb-native-0.1.1-linux-x86_64.tar.gz
+    mv rustorb-native-0.1.1-linux-x86_64 $HOME/rustorb
     ```
 
 === "Linux aarch64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-linux-aarch64.tar.gz
-    tar xzf rustorb-native-0.1.0-linux-aarch64.tar.gz
-    mv rustorb-native-0.1.0-linux-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-linux-aarch64.tar.gz
+    tar xzf rustorb-native-0.1.1-linux-aarch64.tar.gz
+    mv rustorb-native-0.1.1-linux-aarch64 $HOME/rustorb
     ```
 
 === "macOS (Apple silicon)"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-macos-aarch64.tar.gz
-    tar xzf rustorb-native-0.1.0-macos-aarch64.tar.gz
-    mv rustorb-native-0.1.0-macos-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-macos-aarch64.tar.gz
+    tar xzf rustorb-native-0.1.1-macos-aarch64.tar.gz
+    mv rustorb-native-0.1.1-macos-aarch64 $HOME/rustorb
     ```
 
 === "Windows x64"
 
-    Download `rustorb-native-0.1.0-windows-x86_64.zip` from the release
+    Download `rustorb-native-0.1.1-windows-x86_64.zip` from the release
     and extract it, for example to `C:\rustorb`.
 
 The archive contains:
@@ -76,7 +76,6 @@ files, so the naming service is
 ## Without CMake
 
 ```sh
-mkdir -p gen
 rustorb-idl -bc++11 -C gen Echo.idl
 c++ -std=c++17 -I$HOME/rustorb/include -Igen main.cc gen/Echo.cc \
     $HOME/rustorb/lib/librustorb_ffi.a -lpthread -ldl -lm -o app

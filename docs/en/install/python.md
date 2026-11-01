@@ -30,7 +30,6 @@ rustorb-idl --version
 ## Generate code from IDL
 
 ```sh
-mkdir -p gen
 rustorb-idl -bpython -C gen Echo.idl
 export PYTHONPATH=gen
 ```

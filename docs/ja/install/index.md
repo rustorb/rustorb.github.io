@@ -41,15 +41,15 @@ rustorb-names -memory -start 2809  # ポート 2809 でネーミングサービ�
 
 ## リリースのファイル
 
-C++ と Java のパッケージ、そして Python の wheel とクレートのコピーは、各[GitHub Release](https://github.com/rustorb/rustorb/releases) に `SHA256SUMS` と一緒に付いています。0.1.0 では次のとおりです。
+C++ と Java のパッケージ、そして Python の wheel とクレートのコピーは、各[GitHub Release](https://github.com/rustorb/rustorb/releases) に `SHA256SUMS` と一緒に付いています。0.1.1 では次のとおりです。
 
 | ファイル | 中身 |
 | --- | --- |
-| `rustorb-native-0.1.0-linux-x86_64.tar.gz` | `librustorb_ffi`（静的・共有）、C++ ヘッダ、CMake パッケージ |
-| `rustorb-native-0.1.0-linux-aarch64.tar.gz` | 同上、64 ビット ARM の Linux 用 |
-| `rustorb-native-0.1.0-macos-aarch64.tar.gz` | 同上、Apple シリコンの macOS 用 |
-| `rustorb-native-0.1.0-windows-x86_64.zip` | 同上、Windows x64 用 |
-| `rustorb-0.1.0.jar` | Java のマッピング |
+| `rustorb-native-0.1.1-linux-x86_64.tar.gz` | `librustorb_ffi`（静的・共有）、C++ ヘッダ、CMake パッケージ |
+| `rustorb-native-0.1.1-linux-aarch64.tar.gz` | 同上、64 ビット ARM の Linux 用 |
+| `rustorb-native-0.1.1-macos-aarch64.tar.gz` | 同上、Apple シリコンの macOS 用 |
+| `rustorb-native-0.1.1-windows-x86_64.zip` | 同上、Windows x64 用 |
+| `rustorb-0.1.1.jar` | Java のマッピング |
 
 ## ソースから
 

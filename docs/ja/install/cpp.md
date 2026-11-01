@@ -6,35 +6,35 @@ C++17 コンパイラ（GCC 9 以降、Clang 10 以降、MSVC 2019 以降）、C
 
 ## ダウンロード
 
-[リリース](https://github.com/rustorb/rustorb/releases/tag/v0.1.0)からプラットフォームに合うアーカイブを選び、好きな場所に展開します。ここでは `$HOME/rustorb` にします。
+[リリース](https://github.com/rustorb/rustorb/releases/tag/v0.1.1)からプラットフォームに合うアーカイブを選び、好きな場所に展開します。ここでは `$HOME/rustorb` にします。
 
 === "Linux x86_64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-linux-x86_64.tar.gz
-    tar xzf rustorb-native-0.1.0-linux-x86_64.tar.gz
-    mv rustorb-native-0.1.0-linux-x86_64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-linux-x86_64.tar.gz
+    tar xzf rustorb-native-0.1.1-linux-x86_64.tar.gz
+    mv rustorb-native-0.1.1-linux-x86_64 $HOME/rustorb
     ```
 
 === "Linux aarch64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-linux-aarch64.tar.gz
-    tar xzf rustorb-native-0.1.0-linux-aarch64.tar.gz
-    mv rustorb-native-0.1.0-linux-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-linux-aarch64.tar.gz
+    tar xzf rustorb-native-0.1.1-linux-aarch64.tar.gz
+    mv rustorb-native-0.1.1-linux-aarch64 $HOME/rustorb
     ```
 
 === "macOS（Apple シリコン）"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.0/rustorb-native-0.1.0-macos-aarch64.tar.gz
-    tar xzf rustorb-native-0.1.0-macos-aarch64.tar.gz
-    mv rustorb-native-0.1.0-macos-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.1.1/rustorb-native-0.1.1-macos-aarch64.tar.gz
+    tar xzf rustorb-native-0.1.1-macos-aarch64.tar.gz
+    mv rustorb-native-0.1.1-macos-aarch64 $HOME/rustorb
     ```
 
 === "Windows x64"
 
-    リリースから `rustorb-native-0.1.0-windows-x86_64.zip` をダウンロードし、`C:\rustorb` などに展開します。
+    リリースから `rustorb-native-0.1.1-windows-x86_64.zip` をダウンロードし、`C:\rustorb` などに展開します。
 
 アーカイブの中身:
 
@@ -65,7 +65,6 @@ target_link_libraries(app PRIVATE rustorb::rustorb)
 ## CMake を使わない場合
 
 ```sh
-mkdir -p gen
 rustorb-idl -bc++11 -C gen Echo.idl
 c++ -std=c++17 -I$HOME/rustorb/include -Igen main.cc gen/Echo.cc \
     $HOME/rustorb/lib/librustorb_ffi.a -lpthread -ldl -lm -o app
