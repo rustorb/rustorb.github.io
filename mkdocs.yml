@@ -1,0 +1,74 @@
+site_name: rustorb
+site_description: A CORBA ORB with its core written in Rust, for Rust, Python, C++ and Java
+site_url: https://rustorb.github.io/
+repo_url: https://github.com/rustorb/rustorb
+repo_name: rustorb/rustorb
+edit_uri: https://github.com/rustorb/rustorb.github.io/edit/main/docs/
+copyright: Copyright &copy; the rustorb authors. Licensed under MIT OR Apache-2.0.
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Quick start: quickstart.md
+  - Install:
+      - install/index.md
+      - Rust: install/rust.md
+      - Python: install/python.md
+      - C++: install/cpp.md
+      - Java: install/java.md
+  - Tutorial:
+      - tutorial/index.md
+      - Rust: tutorial/rust.md
+      - Python: tutorial/python.md
+      - C++: tutorial/cpp.md
+      - Java: tutorial/java.md
+      - Run them together: tutorial/together.md
+  - Reference:
+      - ORB options: reference/orb-options.md
+      - Naming service: reference/naming.md
+      - More documentation: reference/more.md
