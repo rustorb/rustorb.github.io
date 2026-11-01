@@ -5,8 +5,12 @@ rustorb itself lives in [rustorb/rustorb](https://github.com/rustorb/rustorb).
 
 The site is built with [MkDocs](https://www.mkdocs.org/) and
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). The
-pages are Markdown files in [docs/](docs/); the menu is `nav` in
-[mkdocs.yml](mkdocs.yml).
+pages are Markdown files in [docs/](docs/): English in `docs/en/`, and
+Japanese in `docs/ja/` with the same file names, published under `/ja/` by
+[mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n). A
+page missing in Japanese falls back to the English one. The menu is `nav`
+in [mkdocs.yml](mkdocs.yml); its Japanese titles are `nav_translations`
+there.
 
 ```sh
 pip install -r requirements.txt
