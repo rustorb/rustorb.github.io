@@ -1,4 +1,9 @@
-# rustorb
+<p class="rustorb-hero" markdown>
+![rustorb](../assets/images/rustorb-wordmark-light.svg#only-light){ width="480" }
+![rustorb](../assets/images/rustorb-wordmark-dark.svg#only-dark){ width="480" }
+</p>
+
+# rustorb { .rustorb-sr-only }
 
 **Rust でコアを書いた CORBA ORB です。Rust、Python、C++、Java から使えます。**
 
