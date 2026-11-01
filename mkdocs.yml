@@ -8,6 +8,9 @@ copyright: Copyright &copy; the rustorb authors. Licensed under MIT OR Apache-2.
 
 theme:
   name: material
+  logo: assets/images/rustorb-icon.svg
+  favicon: assets/images/rustorb-icon.svg
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -19,14 +22,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep orange
+      primary: custom
       accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep orange
+      primary: custom
       accent: deep orange
       toggle:
         icon: material/brightness-4
@@ -55,6 +58,9 @@ plugins:
             ORB options: ORB オプション
             Naming service: ネーミングサービス
             More documentation: その他のドキュメント
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 validation:
   anchors: warn

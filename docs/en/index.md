@@ -1,4 +1,9 @@
-# rustorb
+<p class="rustorb-hero" markdown>
+![rustorb](../assets/images/rustorb-wordmark-light.svg#only-light){ width="480" }
+![rustorb](../assets/images/rustorb-wordmark-dark.svg#only-dark){ width="480" }
+</p>
+
+# rustorb { .rustorb-sr-only }
 
 **A CORBA ORB with its core written in Rust, and bindings for Rust, Python,
 C++ and Java.**

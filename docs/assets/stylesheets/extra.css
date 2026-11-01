@@ -1,0 +1,38 @@
+/* rustorb brand colours: navy header (from the logo's orb), copper accent (from the gear). */
+:root {
+  --md-primary-fg-color: #0e2347;
+  --md-primary-fg-color--light: #1f4fa0;
+  --md-primary-fg-color--dark: #0a1a35;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #14171f;
+  --md-primary-fg-color--light: #1f4fa0;
+  --md-primary-fg-color--dark: #0e1117;
+}
+
+/* Logo in the header: a little larger than the default 1.2rem. */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+}
+
+/* Wordmark at the top of the home page. */
+.rustorb-hero {
+  margin: 0 0 1.5em;
+}
+
+/* Links in dark mode: the navy header colour is too dark to read there. */
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #8fb8ff;
+}
+
+/* The home page heading is shown by the wordmark; keep it for screen readers. */
+.rustorb-sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
