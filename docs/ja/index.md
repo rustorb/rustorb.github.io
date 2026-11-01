@@ -46,7 +46,7 @@ rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniO
 | C++17 | IDL to C++11 | GitHub Release の `rustorb-native` | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java（`org.omg.*`）、FFM API 経由 | GitHub Release の `rustorb-<版>.jar` | `rustorb-idl -bjava` |
 
-現在の版は **0.1.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.1.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.1.1** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.1.1)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 

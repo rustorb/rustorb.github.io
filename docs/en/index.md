@@ -60,7 +60,7 @@ OpenRTM-aist-Python unchanged.
 | C++17 | IDL to C++11 | `rustorb-native` from the GitHub release | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java (`org.omg.*`), through the FFM API | `rustorb-<version>.jar` from the GitHub release | `rustorb-idl -bjava` |
 
-The current version is **0.1.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.1.0),
+The current version is **0.1.1** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.1.1),
 [changelog](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)).
 Before 1.0, a new minor version may change the API.
 
