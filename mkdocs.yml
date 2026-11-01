@@ -32,6 +32,33 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+          site_description: Rust でコアを書いた CORBA ORB。Rust、Python、C++、Java から使えます
+          nav_translations:
+            Home: ホーム
+            Quick start: クイックスタート
+            Install: インストール
+            Tutorial: チュートリアル
+            Run them together: つないで動かす
+            Reference: リファレンス
+            ORB options: ORB オプション
+            Naming service: ネーミングサービス
+            More documentation: その他のドキュメント
+
+validation:
+  anchors: warn
+
 markdown_extensions:
   - admonition
   - attr_list
