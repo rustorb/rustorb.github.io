@@ -16,7 +16,7 @@ pip install rustorb-idl
 rustorb-idl --version
 ```
 
-`rustorb-idl` は Python 3.9 以降で動き、[idl_parser](https://github.com/sugarsweetrobotics/idl_parser) も一緒に入ります。言語ごとにバックエンドがあります。
+`rustorb-idl` は [rustorb/rustorb-idl](https://github.com/rustorb/rustorb-idl) で開発し、rustorb とは別にリリースしています（GPL-3.0-or-later。生成したコードは対象外）。Python 3.9 以降で動き、[idl_parser](https://github.com/sugarsweetrobotics/idl_parser) も一緒に入ります。言語ごとにバックエンドがあります。
 
 | バックエンド | 出力 |
 | --- | --- |

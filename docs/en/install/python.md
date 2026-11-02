@@ -70,5 +70,6 @@ are listed in [omniorb-compat.md](https://github.com/rustorb/rustorb/blob/main/d
 ```sh
 git clone https://github.com/rustorb/rustorb && cd rustorb
 pip install ./python               # builds the native module with maturin; needs Rust
-pip install ./crates/rustorb-codegen/python
+git clone https://github.com/rustorb/rustorb-idl
+pip install ./rustorb-idl/python      # the IDL compiler, from its own repository
 ```

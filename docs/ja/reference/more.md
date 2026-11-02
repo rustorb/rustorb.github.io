@@ -6,7 +6,7 @@
 | --- | --- |
 | Rust マッピング | [rust-mapping.md](https://github.com/rustorb/rustorb/blob/main/docs/rust-mapping.md) |
 | 非同期 API（Rust） | [async-api.md](https://github.com/rustorb/rustorb/blob/main/docs/async-api.md) |
-| Python バインディング | [python-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/python-binding.md), [ジェネレータ](https://github.com/rustorb/rustorb/blob/main/docs/python-codegen.md) |
+| Python バインディング | [python-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/python-binding.md), [ジェネレータ](https://github.com/rustorb/rustorb-idl/blob/main/docs/python-codegen.md) |
 | omniORBpy 互換 | [omniorb-compat.md](https://github.com/rustorb/rustorb/blob/main/docs/omniorb-compat.md) |
 | C++ バインディング | [cpp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/cpp-binding.md) |
 | Java バインディング | [java-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/java-binding.md), [FFM](https://github.com/rustorb/rustorb/blob/main/docs/java-ffm.md) |
