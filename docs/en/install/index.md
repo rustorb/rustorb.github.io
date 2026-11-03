@@ -18,7 +18,9 @@ pip install rustorb-idl
 rustorb-idl --version
 ```
 
-`rustorb-idl` needs Python 3.9 or later and installs
+`rustorb-idl` is developed in [rustorb/rustorb-idl](https://github.com/rustorb/rustorb-idl) and released
+on its own (GPL-3.0-or-later; the code it generates is not covered).
+It needs Python 3.9 or later and installs
 [idl_parser](https://github.com/sugarsweetrobotics/idl_parser). It has one
 backend per language:
 

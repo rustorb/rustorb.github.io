@@ -8,7 +8,7 @@ The design documents live in the
 | --- | --- |
 | Rust mapping | [rust-mapping.md](https://github.com/rustorb/rustorb/blob/main/docs/rust-mapping.md) |
 | Async API (Rust) | [async-api.md](https://github.com/rustorb/rustorb/blob/main/docs/async-api.md) |
-| Python binding | [python-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/python-binding.md), [generator](https://github.com/rustorb/rustorb/blob/main/docs/python-codegen.md) |
+| Python binding | [python-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/python-binding.md), [generator](https://github.com/rustorb/rustorb-idl/blob/main/docs/python-codegen.md) |
 | omniORBpy compatibility | [omniorb-compat.md](https://github.com/rustorb/rustorb/blob/main/docs/omniorb-compat.md) |
 | C++ binding | [cpp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/cpp-binding.md) |
 | Java binding | [java-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/java-binding.md), [FFM](https://github.com/rustorb/rustorb/blob/main/docs/java-ffm.md) |

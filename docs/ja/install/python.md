@@ -60,5 +60,6 @@ pip install rustorb rustorb-omniorb-compat
 ```sh
 git clone https://github.com/rustorb/rustorb && cd rustorb
 pip install ./python               # maturin でネイティブモジュールをビルド。Rust が必要
-pip install ./crates/rustorb-codegen/python
+git clone https://github.com/rustorb/rustorb-idl
+pip install ./rustorb-idl/python      # IDL コンパイラ（別のリポジトリ）
 ```
