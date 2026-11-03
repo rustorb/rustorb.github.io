@@ -8,8 +8,8 @@ and `Echo.idl` written ([Tutorial](index.md), steps 1–3).
 ```sh
 cargo new echo-rs
 cd echo-rs
-cargo add rustorb-core@0.1 rustorb-naming@0.1
-cargo add --build rustorb-codegen@0.1
+cargo add rustorb-core@0.3 rustorb-naming@0.3
+cargo add --build rustorb-codegen@0.2
 mkdir idl && cp ../Echo.idl idl/
 rm src/main.rs && mkdir src/bin
 ```
