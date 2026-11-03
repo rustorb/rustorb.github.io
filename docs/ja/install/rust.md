@@ -13,19 +13,19 @@ rustorb は crates.io のクレート群です。**Rust 1.85** 以降（edition 
 ## クレートを追加する
 
 ```sh
-cargo add rustorb-core@0.1 rustorb-naming@0.1
-cargo add --build rustorb-codegen@0.1
+cargo add rustorb-core@0.3 rustorb-naming@0.3
+cargo add --build rustorb-codegen@0.2
 ```
 
 `Cargo.toml` に直接書く場合:
 
 ```toml
 [dependencies]
-rustorb-core = "0.1"
-rustorb-naming = "0.1"     # ネーミングサービスを使う場合
+rustorb-core = "0.3"
+rustorb-naming = "0.3"     # ネーミングサービスを使う場合
 
 [build-dependencies]
-rustorb-codegen = "0.1"
+rustorb-codegen = "0.2"
 ```
 
 ## IDL コンパイラを入れる

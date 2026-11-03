@@ -1,6 +1,6 @@
 # Tutorial: Java
 
-Before you start, have Java 22 or later, `rustorb-0.1.1.jar` and the
+Before you start, have Java 22 or later, `rustorb-0.3.0.jar` and the
 unpacked `rustorb-native` archive in the current directory
 ([Install for Java](../install/java.md)), `rustorb-idl` on `PATH`, the
 naming service running and `Echo.idl` written ([Tutorial](index.md),
@@ -100,10 +100,10 @@ public final class Client {
 ## Build and run
 
 ```sh
-javac --release 22 -cp rustorb-0.1.1.jar -d classes Server.java Client.java $(find gen -name '*.java')
+javac --release 22 -cp rustorb-0.3.0.jar -d classes Server.java Client.java $(find gen -name '*.java')
 
-LIB=$PWD/rustorb-native-0.1.1-linux-x86_64/lib/librustorb_ffi.so
-JAVA="java --enable-native-access=ALL-UNNAMED -Drustorb.ffi.library=$LIB -cp rustorb-0.1.1.jar:classes"
+LIB=$PWD/rustorb-native-0.3.0-linux-x86_64/lib/librustorb_ffi.so
+JAVA="java --enable-native-access=ALL-UNNAMED -Drustorb.ffi.library=$LIB -cp rustorb-0.3.0.jar:classes"
 NS="-ORBInitRef NameService=corbaloc::localhost:2809/NameService"
 $JAVA Server $NS &
 $JAVA Client $NS --shutdown
