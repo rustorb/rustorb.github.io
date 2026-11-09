@@ -59,15 +59,15 @@ options.
 
 The C++ and Java packages, and copies of the Python wheels and crates, are
 attached to each [GitHub release](https://github.com/rustorb/rustorb/releases)
-with a `SHA256SUMS` file. For 0.3.0:
+with a `SHA256SUMS` file. For 0.4.0:
 
 | File | Contents |
 | --- | --- |
-| `rustorb-native-0.3.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package |
-| `rustorb-native-0.3.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
-| `rustorb-native-0.3.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
-| `rustorb-native-0.3.0-windows-x86_64.zip` | the same, for Windows x64 |
-| `rustorb-0.3.0.jar` | the Java mapping |
+| `rustorb-native-0.4.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package |
+| `rustorb-native-0.4.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
+| `rustorb-native-0.4.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
+| `rustorb-native-0.4.0-windows-x86_64.zip` | the same, for Windows x64 |
+| `rustorb-0.4.0.jar` | the Java mapping |
 
 ## From source
 

@@ -35,7 +35,8 @@ rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniO
 - **サーバ側**: 標準ポリシーを備えた POA、サーバントマネージャ、デフォルトサーバント、アダプタアクティベータ、3 つのスレッドモデル
 - **型**: Any、TypeCode、DynAny、`fixed`、`long double`、valuetype（custom、truncatable、box、`supports`）、abstract interface
 - **ネーミングサービス**: CosNaming のクライアントとサーバ、`rustorb-names` デーモン（永続化つきの omniNames の代替）
-- **その他**: DII / DSI、ポリシーと呼び出しタイムアウト、Rust の非同期 API
+- **非同期呼び出し**: Python・C++・Java のコールバック型 AMI（`sendc_` と返事のハンドラ、`rustorb-idl -Wbami`）、Rust の非同期 API
+- **その他**: DII / DSI、ポリシーと呼び出しタイムアウト
 
 ## 対応言語
 
@@ -46,7 +47,7 @@ rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniO
 | C++17 | IDL to C++11 | GitHub Release の `rustorb-native` | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java（`org.omg.*`）、FFM API 経由 | GitHub Release の `rustorb-<版>.jar` | `rustorb-idl -bjava` |
 
-現在の版は **0.3.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.3.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.4.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.4.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 
