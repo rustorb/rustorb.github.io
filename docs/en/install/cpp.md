@@ -11,36 +11,36 @@ later, and [`rustorb-idl`](index.md#the-idl-compiler-rustorb-idl).
 ## Download
 
 Pick the archive for your platform from the
-[release](https://github.com/rustorb/rustorb/releases/tag/v0.3.0) and unpack
+[release](https://github.com/rustorb/rustorb/releases/tag/v0.4.0) and unpack
 it where you like, for example `$HOME/rustorb`:
 
 === "Linux x86_64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-linux-x86_64.tar.gz
-    tar xzf rustorb-native-0.3.0-linux-x86_64.tar.gz
-    mv rustorb-native-0.3.0-linux-x86_64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-linux-x86_64.tar.gz
+    tar xzf rustorb-native-0.4.0-linux-x86_64.tar.gz
+    mv rustorb-native-0.4.0-linux-x86_64 $HOME/rustorb
     ```
 
 === "Linux aarch64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-linux-aarch64.tar.gz
-    tar xzf rustorb-native-0.3.0-linux-aarch64.tar.gz
-    mv rustorb-native-0.3.0-linux-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-linux-aarch64.tar.gz
+    tar xzf rustorb-native-0.4.0-linux-aarch64.tar.gz
+    mv rustorb-native-0.4.0-linux-aarch64 $HOME/rustorb
     ```
 
 === "macOS (Apple silicon)"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-macos-aarch64.tar.gz
-    tar xzf rustorb-native-0.3.0-macos-aarch64.tar.gz
-    mv rustorb-native-0.3.0-macos-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-macos-aarch64.tar.gz
+    tar xzf rustorb-native-0.4.0-macos-aarch64.tar.gz
+    mv rustorb-native-0.4.0-macos-aarch64 $HOME/rustorb
     ```
 
 === "Windows x64"
 
-    Download `rustorb-native-0.3.0-windows-x86_64.zip` from the release
+    Download `rustorb-native-0.4.0-windows-x86_64.zip` from the release
     and extract it, for example to `C:\rustorb`.
 
 The archive contains:
@@ -57,7 +57,7 @@ lib/cmake/rustorb/           the CMake package
 Point CMake at the directory with `-DCMAKE_PREFIX_PATH=$HOME/rustorb`, and:
 
 ```cmake
-find_package(rustorb 0.3 REQUIRED)
+find_package(rustorb 0.4 REQUIRED)
 
 # runs rustorb-idl -bc++11; the output goes to ${CMAKE_CURRENT_BINARY_DIR}/idl
 rustorb_idl_generate(SOURCES Echo.idl)

@@ -6,35 +6,35 @@ C++17 コンパイラ（GCC 9 以降、Clang 10 以降、MSVC 2019 以降）、C
 
 ## ダウンロード
 
-[リリース](https://github.com/rustorb/rustorb/releases/tag/v0.3.0)からプラットフォームに合うアーカイブを選び、好きな場所に展開します。ここでは `$HOME/rustorb` にします。
+[リリース](https://github.com/rustorb/rustorb/releases/tag/v0.4.0)からプラットフォームに合うアーカイブを選び、好きな場所に展開します。ここでは `$HOME/rustorb` にします。
 
 === "Linux x86_64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-linux-x86_64.tar.gz
-    tar xzf rustorb-native-0.3.0-linux-x86_64.tar.gz
-    mv rustorb-native-0.3.0-linux-x86_64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-linux-x86_64.tar.gz
+    tar xzf rustorb-native-0.4.0-linux-x86_64.tar.gz
+    mv rustorb-native-0.4.0-linux-x86_64 $HOME/rustorb
     ```
 
 === "Linux aarch64"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-linux-aarch64.tar.gz
-    tar xzf rustorb-native-0.3.0-linux-aarch64.tar.gz
-    mv rustorb-native-0.3.0-linux-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-linux-aarch64.tar.gz
+    tar xzf rustorb-native-0.4.0-linux-aarch64.tar.gz
+    mv rustorb-native-0.4.0-linux-aarch64 $HOME/rustorb
     ```
 
 === "macOS（Apple シリコン）"
 
     ```sh
-    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.3.0/rustorb-native-0.3.0-macos-aarch64.tar.gz
-    tar xzf rustorb-native-0.3.0-macos-aarch64.tar.gz
-    mv rustorb-native-0.3.0-macos-aarch64 $HOME/rustorb
+    curl -LO https://github.com/rustorb/rustorb/releases/download/v0.4.0/rustorb-native-0.4.0-macos-aarch64.tar.gz
+    tar xzf rustorb-native-0.4.0-macos-aarch64.tar.gz
+    mv rustorb-native-0.4.0-macos-aarch64 $HOME/rustorb
     ```
 
 === "Windows x64"
 
-    リリースから `rustorb-native-0.3.0-windows-x86_64.zip` をダウンロードし、`C:\rustorb` などに展開します。
+    リリースから `rustorb-native-0.4.0-windows-x86_64.zip` をダウンロードし、`C:\rustorb` などに展開します。
 
 アーカイブの中身:
 
@@ -50,7 +50,7 @@ lib/cmake/rustorb/           CMake パッケージ
 `-DCMAKE_PREFIX_PATH=$HOME/rustorb` でディレクトリを CMake に教え、次のように書きます。
 
 ```cmake
-find_package(rustorb 0.3 REQUIRED)
+find_package(rustorb 0.4 REQUIRED)
 
 # rustorb-idl -bc++11 を実行し、${CMAKE_CURRENT_BINARY_DIR}/idl に出力する
 rustorb_idl_generate(SOURCES Echo.idl)

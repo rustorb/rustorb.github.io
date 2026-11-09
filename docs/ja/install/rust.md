@@ -13,7 +13,7 @@ rustorb は crates.io のクレート群です。**Rust 1.85** 以降（edition 
 ## クレートを追加する
 
 ```sh
-cargo add rustorb-core@0.3 rustorb-naming@0.3
+cargo add rustorb-core@0.4 rustorb-naming@0.4
 cargo add --build rustorb-codegen@0.2
 ```
 
@@ -21,8 +21,8 @@ cargo add --build rustorb-codegen@0.2
 
 ```toml
 [dependencies]
-rustorb-core = "0.3"
-rustorb-naming = "0.3"     # ネーミングサービスを使う場合
+rustorb-core = "0.4"
+rustorb-naming = "0.4"     # ネーミングサービスを使う場合
 
 [build-dependencies]
 rustorb-codegen = "0.2"

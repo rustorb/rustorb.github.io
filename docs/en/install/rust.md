@@ -14,7 +14,7 @@ rustorb is a set of crates on crates.io. It needs **Rust 1.85** or later
 ## Add the crates
 
 ```sh
-cargo add rustorb-core@0.3 rustorb-naming@0.3
+cargo add rustorb-core@0.4 rustorb-naming@0.4
 cargo add --build rustorb-codegen@0.2
 ```
 
@@ -22,8 +22,8 @@ or by hand in `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustorb-core = "0.3"
-rustorb-naming = "0.3"     # if you use the naming service
+rustorb-core = "0.4"
+rustorb-naming = "0.4"     # if you use the naming service
 
 [build-dependencies]
 rustorb-codegen = "0.2"

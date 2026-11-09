@@ -1,6 +1,6 @@
 # チュートリアル: Java
 
-始める前に、Java 22 以降を用意し、`rustorb-0.3.0.jar` と展開した `rustorb-native` アーカイブをカレントディレクトリに置きます（[Java へのインストール](../install/java.md)）。さらに `rustorb-idl` を `PATH` に置き、ネーミングサービスを起動し、`Echo.idl` を書いておきます（[チュートリアル](index.md)の手順 1〜3）。
+始める前に、Java 22 以降を用意し、`rustorb-0.4.0.jar` と展開した `rustorb-native` アーカイブをカレントディレクトリに置きます（[Java へのインストール](../install/java.md)）。さらに `rustorb-idl` を `PATH` に置き、ネーミングサービスを起動し、`Echo.idl` を書いておきます（[チュートリアル](index.md)の手順 1〜3）。
 
 ## コードを生成する
 
@@ -93,10 +93,10 @@ public final class Client {
 ## ビルドして動かす
 
 ```sh
-javac --release 22 -cp rustorb-0.3.0.jar -d classes Server.java Client.java $(find gen -name '*.java')
+javac --release 22 -cp rustorb-0.4.0.jar -d classes Server.java Client.java $(find gen -name '*.java')
 
-LIB=$PWD/rustorb-native-0.3.0-linux-x86_64/lib/librustorb_ffi.so
-JAVA="java --enable-native-access=ALL-UNNAMED -Drustorb.ffi.library=$LIB -cp rustorb-0.3.0.jar:classes"
+LIB=$PWD/rustorb-native-0.4.0-linux-x86_64/lib/librustorb_ffi.so
+JAVA="java --enable-native-access=ALL-UNNAMED -Drustorb.ffi.library=$LIB -cp rustorb-0.4.0.jar:classes"
 NS="-ORBInitRef NameService=corbaloc::localhost:2809/NameService"
 $JAVA Server $NS &
 $JAVA Client $NS --shutdown

@@ -16,6 +16,7 @@
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
 | タイムアウト | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
+| コールバック型 AMI（C++・Java・Python） | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | 相互接続テスト | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | リリース | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |
 

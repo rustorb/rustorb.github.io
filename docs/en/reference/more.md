@@ -18,6 +18,7 @@ The design documents live in the
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
 | Timeouts | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
+| Callback AMI (C++, Java, Python) | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | Interoperability tests | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | Releases | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |
 
