@@ -8,7 +8,8 @@
 **A CORBA ORB with its core written in Rust, and bindings for Rust, Python,
 C++ and Java.**
 
-rustorb speaks GIOP 1.0 to 1.2 over IIOP and SSLIOP, and is tested against
+rustorb speaks GIOP 1.0 to 1.2 over IIOP, SSLIOP and omniORB's Unix domain
+sockets, and is tested against
 omniORB, omniORBpy and JacORB in every combination of client, server and
 naming service. It aims to replace omniORB and omniORBpy in existing
 systems: the Python binding generates the same API as `omniidl -bpython`,
@@ -41,9 +42,11 @@ OpenRTM-aist-Python unchanged.
 ## What is in it
 
 - **Protocol**: CDR, GIOP 1.0–1.2 with fragments, IORs, `corbaloc:` and
-  `corbaname:`, code set negotiation, SSLIOP (TLS with rustls)
+  `corbaname:`, code set negotiation, SSLIOP (TLS with rustls), omniORB's
+  `giop:unix` endpoints (Unix domain sockets, Linux and macOS)
 - **Server side**: the POA with the standard policies, servant managers,
-  default servants, adapter activators and the three thread models
+  default servants, adapter activators, the three thread models and the
+  `POAManagerFactory`
 - **Types**: Any, TypeCode, DynAny, `fixed`, `long double`, valuetypes
   (custom, truncatable, boxed, `supports`), abstract interfaces
 - **Naming Service**: CosNaming client and server, and the `rustorb-names`
@@ -51,7 +54,8 @@ OpenRTM-aist-Python unchanged.
 - **Asynchronous calls**: callback AMI (`sendc_` and reply handlers) for
   Python, C++ and Java with `rustorb-idl -Wbami`, an optional async API for
   Rust
-- **More**: DII / DSI, policies and call timeouts
+- **More**: DII / DSI (Rust, Python, C++ and Java), policies, call timeouts
+  and `SyncScope` for oneway calls, omniORBpy's `omniORB.URI`
 
 ## Languages
 
@@ -62,7 +66,7 @@ OpenRTM-aist-Python unchanged.
 | C++17 | IDL to C++11 | `rustorb-native` from the GitHub release | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java (`org.omg.*`), through the FFM API | `rustorb-<version>.jar` from the GitHub release | `rustorb-idl -bjava` |
 
-The current version is **0.4.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.4.0),
+The current version is **0.5.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.5.0),
 [changelog](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)).
 Before 1.0, a new minor version may change the API.
 
