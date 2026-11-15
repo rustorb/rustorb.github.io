@@ -7,7 +7,7 @@
 
 **Rust でコアを書いた CORBA ORB です。Rust、Python、C++、Java から使えます。**
 
-rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniORBpy、JacORB とのあいだで、クライアント・サーバ・ネーミングサービスのすべての組み合わせをテストしています。既存システムの omniORB / omniORBpy を置き換えることを目指しており、Python バインディングは `omniidl -bpython` と同じ API を生成します。互換パッケージを使えば、OpenRTM-aist-Python のような omniORBpy のアプリケーションをそのまま動かせます。
+rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で GIOP 1.0〜1.2 を話し、omniORB、omniORBpy、JacORB とのあいだで、クライアント・サーバ・ネーミングサービスのすべての組み合わせをテストしています。既存システムの omniORB / omniORBpy を置き換えることを目指しており、Python バインディングは `omniidl -bpython` と同じ API を生成します。互換パッケージを使えば、OpenRTM-aist-Python のような omniORBpy のアプリケーションをそのまま動かせます。
 
 <div class="grid cards" markdown>
 
@@ -31,12 +31,12 @@ rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniO
 
 ## できること
 
-- **プロトコル**: CDR、フラグメントを含む GIOP 1.0〜1.2、IOR、`corbaloc:` と `corbaname:`、コードセットのネゴシエーション、SSLIOP（rustls による TLS）
-- **サーバ側**: 標準ポリシーを備えた POA、サーバントマネージャ、デフォルトサーバント、アダプタアクティベータ、3 つのスレッドモデル
+- **プロトコル**: CDR、フラグメントを含む GIOP 1.0〜1.2、IOR、`corbaloc:` と `corbaname:`、コードセットのネゴシエーション、SSLIOP（rustls による TLS）、omniORB の `giop:unix` エンドポイント（Unix ドメインソケット、Linux と macOS）
+- **サーバ側**: 標準ポリシーを備えた POA、サーバントマネージャ、デフォルトサーバント、アダプタアクティベータ、3 つのスレッドモデル、`POAManagerFactory`
 - **型**: Any、TypeCode、DynAny、`fixed`、`long double`、valuetype（custom、truncatable、box、`supports`）、abstract interface
 - **ネーミングサービス**: CosNaming のクライアントとサーバ、`rustorb-names` デーモン（永続化つきの omniNames の代替）
 - **非同期呼び出し**: Python・C++・Java のコールバック型 AMI（`sendc_` と返事のハンドラ、`rustorb-idl -Wbami`）、Rust の非同期 API
-- **その他**: DII / DSI、ポリシーと呼び出しタイムアウト
+- **その他**: DII / DSI（Rust・Python・C++・Java）、ポリシー、呼び出しタイムアウトと oneway の `SyncScope`、omniORBpy の `omniORB.URI`
 
 ## 対応言語
 
@@ -47,7 +47,7 @@ rustorb は IIOP と SSLIOP の上で GIOP 1.0〜1.2 を話し、omniORB、omniO
 | C++17 | IDL to C++11 | GitHub Release の `rustorb-native` | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java（`org.omg.*`）、FFM API 経由 | GitHub Release の `rustorb-<版>.jar` | `rustorb-idl -bjava` |
 
-現在の版は **0.4.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.4.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.5.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.5.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 

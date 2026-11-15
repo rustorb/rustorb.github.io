@@ -14,6 +14,7 @@ where they can also be properties). The ORB removes the ones it reads.
 | `-ORBmaxGIOPVersion 1.1` | the highest GIOP version to send |
 | `-ORBclientCallTimeOutPeriod MS` | a timeout for every call ([timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md)) |
 | `-ORBendPoint giop:ssl:HOST:PORT`, `-ORBsslCAFile FILE`, `-ORBsslKeyFile FILE` | SSLIOP, IIOP over TLS ([ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md)) |
+| `-ORBendPoint giop:unix:PATH` | a Unix domain socket, as omniORB has (Linux and macOS). An empty `PATH` makes one in `/tmp/omni-USER/`, a `PATH` ending in `/` one in that directory. Clients on the same host use it before TCP ([unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md)) |
 
 The option names are those of omniORB, so existing command lines and
 scripts keep working.

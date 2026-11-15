@@ -15,7 +15,9 @@
 | valuetype | [valuetype.md](https://github.com/rustorb/rustorb/blob/main/docs/valuetype.md) |
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
+| Unix ドメインソケット（`giop:unix`） | [unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md) |
 | タイムアウト | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
+| SyncScope（oneway 呼び出し） | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
 | コールバック型 AMI（C++・Java・Python） | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | 相互接続テスト | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | リリース | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |

@@ -17,7 +17,9 @@ The design documents live in the
 | Valuetypes | [valuetype.md](https://github.com/rustorb/rustorb/blob/main/docs/valuetype.md) |
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
+| Unix domain sockets (`giop:unix`) | [unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md) |
 | Timeouts | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
+| SyncScope (oneway calls) | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
 | Callback AMI (C++, Java, Python) | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | Interoperability tests | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | Releases | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |

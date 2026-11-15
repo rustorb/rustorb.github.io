@@ -11,6 +11,7 @@
 | `-ORBmaxGIOPVersion 1.1` | 送信する GIOP の最大の版 |
 | `-ORBclientCallTimeOutPeriod MS` | すべての呼び出しのタイムアウト（[timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md)） |
 | `-ORBendPoint giop:ssl:HOST:PORT`、`-ORBsslCAFile FILE`、`-ORBsslKeyFile FILE` | SSLIOP（TLS 上の IIOP。[ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md)） |
+| `-ORBendPoint giop:unix:PATH` | omniORB と同じ Unix ドメインソケット（Linux と macOS）。`PATH` が空なら `/tmp/omni-USER/` に、`/` で終わればそのディレクトリに作ります。同じホストのクライアントは TCP より先にこれを使います（[unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md)） |
 
 オプション名は omniORB と同じなので、既存のコマンドラインやスクリプトはそのまま使えます。
 
