@@ -47,7 +47,7 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 | C++17 | IDL to C++11 | GitHub Release の `rustorb-native` | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java（`org.omg.*`）、FFM API 経由 | GitHub Release の `rustorb-<版>.jar` | `rustorb-idl -bjava` |
 
-現在の版は **0.5.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.5.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.6.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.6.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 
