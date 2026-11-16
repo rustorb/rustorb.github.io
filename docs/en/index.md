@@ -33,6 +33,11 @@ OpenRTM-aist-Python unchanged.
     One IDL interface, a server and a client in each language, found
     through the naming service, all talking to each other.
 
+-   :material-compass-outline: **[Guides](guides/index.md)**
+
+    The POA, Any and valuetypes, DII / DSI, callback AMI, TLS and Unix
+    sockets, timeouts, and moving from omniORBpy.
+
 -   :material-book-open-variant: **[Reference](reference/orb-options.md)**
 
     ORB options, the naming service, and the design documents.
@@ -66,7 +71,7 @@ OpenRTM-aist-Python unchanged.
 | C++17 | IDL to C++11 | `rustorb-native` from the GitHub release | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java (`org.omg.*`), through the FFM API | `rustorb-<version>.jar` from the GitHub release | `rustorb-idl -bjava` |
 
-The current version is **0.5.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.5.0),
+The current version is **0.6.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.6.0),
 [changelog](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)).
 Before 1.0, a new minor version may change the API.
 

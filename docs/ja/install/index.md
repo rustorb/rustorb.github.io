@@ -37,19 +37,28 @@ cargo install rustorb-naming       # rustorb-names コマンドが入ります
 rustorb-names -memory -start 2809  # ポート 2809 でネーミングサービスを起動
 ```
 
-`cargo install` には Rust のツールチェイン（[rustup](https://rustup.rs/)）が要ります。`rustorb-names` の代わりに `omniNames` など他の CORBA ネーミングサービスを使っても構いません。`rustorb-names` は omniORB、omniORBpy、JacORB のクライアントにも使えます。永続化とオプションは[ネーミングサービス](../reference/naming.md)を見てください。
+`cargo install` には Rust のツールチェイン（[rustup](https://rustup.rs/)）が要ります。ない場合は、[GitHub Release](https://github.com/rustorb/rustorb/releases/latest) のビルド済みのファイル（`rustorb-names-<版>-<環境>`。Linux、macOS、Windows 用）を `PATH` に置いてください。
+
+```sh
+curl -LO https://github.com/rustorb/rustorb/releases/download/v0.6.0/rustorb-names-0.6.0-linux-x86_64.tar.gz
+tar xzf rustorb-names-0.6.0-linux-x86_64.tar.gz
+./rustorb-names-0.6.0-linux-x86_64/rustorb-names -memory -start 2809
+```
+
+`rustorb-names` の代わりに `omniNames` など他の CORBA ネーミングサービスを使っても構いません。`rustorb-names` は omniORB、omniORBpy、JacORB のクライアントにも使えます。永続化とオプションは[ネーミングサービス](../reference/naming.md)を見てください。
 
 ## リリースのファイル
 
-C++ と Java のパッケージ、そして Python の wheel とクレートのコピーは、各[GitHub Release](https://github.com/rustorb/rustorb/releases) に `SHA256SUMS` と一緒に付いています。0.5.0 では次のとおりです。
+C++ と Java のパッケージ、そして Python の wheel とクレートのコピーは、各[GitHub Release](https://github.com/rustorb/rustorb/releases) に `SHA256SUMS` と一緒に付いています。0.6.0 では次のとおりです。
 
 | ファイル | 中身 |
 | --- | --- |
-| `rustorb-native-0.5.0-linux-x86_64.tar.gz` | `librustorb_ffi`（静的・共有）、C++ ヘッダ、CMake パッケージ |
-| `rustorb-native-0.5.0-linux-aarch64.tar.gz` | 同上、64 ビット ARM の Linux 用 |
-| `rustorb-native-0.5.0-macos-aarch64.tar.gz` | 同上、Apple シリコンの macOS 用 |
-| `rustorb-native-0.5.0-windows-x86_64.zip` | 同上、Windows x64 用 |
-| `rustorb-0.5.0.jar` | Java のマッピング |
+| `rustorb-native-0.6.0-linux-x86_64.tar.gz` | `librustorb_ffi`（静的・共有）、C++ ヘッダ、CMake パッケージ、`bin/rustorb-names` |
+| `rustorb-native-0.6.0-linux-aarch64.tar.gz` | 同上、64 ビット ARM の Linux 用 |
+| `rustorb-native-0.6.0-macos-aarch64.tar.gz` | 同上、Apple シリコンの macOS 用 |
+| `rustorb-native-0.6.0-windows-x86_64.zip` | 同上、Windows x64 用 |
+| `rustorb-names-0.6.0-<環境>.tar.gz` / `.zip` | ネーミングサービス `rustorb-names` だけ。環境は上の 4 つ |
+| `rustorb-0.6.0.jar` | Java のマッピング |
 
 ## ソースから
 

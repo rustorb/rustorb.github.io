@@ -49,7 +49,19 @@ cargo install rustorb-naming       # installs the rustorb-names binary
 rustorb-names -memory -start 2809  # a naming service on port 2809
 ```
 
-`cargo install` needs a Rust toolchain ([rustup](https://rustup.rs/)). Any
+`cargo install` needs a Rust toolchain ([rustup](https://rustup.rs/)).
+Without one, take the prebuilt binary from the
+[GitHub release](https://github.com/rustorb/rustorb/releases/latest)
+(`rustorb-names-<version>-<platform>`, for Linux, macOS and Windows) and
+put it on `PATH`:
+
+```sh
+curl -LO https://github.com/rustorb/rustorb/releases/download/v0.6.0/rustorb-names-0.6.0-linux-x86_64.tar.gz
+tar xzf rustorb-names-0.6.0-linux-x86_64.tar.gz
+./rustorb-names-0.6.0-linux-x86_64/rustorb-names -memory -start 2809
+```
+
+Any
 CORBA naming service works in place of `rustorb-names`, `omniNames`
 included, and `rustorb-names` serves omniORB, omniORBpy and JacORB clients
 as well. See [Naming service](../reference/naming.md) for persistence and
@@ -59,15 +71,16 @@ options.
 
 The C++ and Java packages, and copies of the Python wheels and crates, are
 attached to each [GitHub release](https://github.com/rustorb/rustorb/releases)
-with a `SHA256SUMS` file. For 0.5.0:
+with a `SHA256SUMS` file. For 0.6.0:
 
 | File | Contents |
 | --- | --- |
-| `rustorb-native-0.5.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package |
-| `rustorb-native-0.5.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
-| `rustorb-native-0.5.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
-| `rustorb-native-0.5.0-windows-x86_64.zip` | the same, for Windows x64 |
-| `rustorb-0.5.0.jar` | the Java mapping |
+| `rustorb-native-0.6.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package, `bin/rustorb-names` |
+| `rustorb-native-0.6.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
+| `rustorb-native-0.6.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
+| `rustorb-native-0.6.0-windows-x86_64.zip` | the same, for Windows x64 |
+| `rustorb-names-0.6.0-<platform>.tar.gz` / `.zip` | the `rustorb-names` naming service alone, for the same four platforms |
+| `rustorb-0.6.0.jar` | the Java mapping |
 
 ## From source
 

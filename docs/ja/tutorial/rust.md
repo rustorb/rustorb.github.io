@@ -7,7 +7,7 @@
 ```sh
 cargo new echo-rs
 cd echo-rs
-cargo add rustorb-core@0.5 rustorb-naming@0.5
+cargo add rustorb-core@0.6 rustorb-naming@0.6
 cargo add --build rustorb-codegen@0.2
 mkdir idl && cp ../Echo.idl idl/
 rm src/main.rs && mkdir src/bin
