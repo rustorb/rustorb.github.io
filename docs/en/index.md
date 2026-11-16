@@ -33,6 +33,11 @@ OpenRTM-aist-Python unchanged.
     One IDL interface, a server and a client in each language, found
     through the naming service, all talking to each other.
 
+-   :material-compass-outline: **[Guides](guides/index.md)**
+
+    The POA, Any and valuetypes, DII / DSI, callback AMI, TLS and Unix
+    sockets, timeouts, and moving from omniORBpy.
+
 -   :material-book-open-variant: **[Reference](reference/orb-options.md)**
 
     ORB options, the naming service, and the design documents.

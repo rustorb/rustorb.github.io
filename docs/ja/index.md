@@ -23,6 +23,10 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 
     1 つの IDL インタフェースについて、各言語でサーバとクライアントを書き、ネーミングサービス経由でつなぎます。
 
+-   :material-compass-outline: **[ガイド](guides/index.md)**
+
+    POA、Any と valuetype、DII / DSI、コールバック型 AMI、TLS と Unix ソケット、タイムアウト、omniORBpy からの移行。
+
 -   :material-book-open-variant: **[リファレンス](reference/orb-options.md)**
 
     ORB オプション、ネーミングサービス、設計ドキュメント。

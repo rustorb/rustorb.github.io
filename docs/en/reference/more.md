@@ -1,5 +1,7 @@
 # More documentation
 
+How to use each feature is in the [guides](../guides/index.md).
+
 The design documents live in the
 [rustorb repository](https://github.com/rustorb/rustorb/tree/main/docs)
 (most of them in Japanese).
@@ -18,6 +20,10 @@ The design documents live in the
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
 | Unix domain sockets (`giop:unix`) | [unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md) |
+| Bidirectional GIOP | [bidir-giop.md](https://github.com/rustorb/rustorb/blob/main/docs/bidir-giop.md) |
+| Connections | [connections.md](https://github.com/rustorb/rustorb/blob/main/docs/connections.md) |
+| Portable Interceptors | [portable-interceptors.md](https://github.com/rustorb/rustorb/blob/main/docs/portable-interceptors.md) |
+| Tracing | [tracing.md](https://github.com/rustorb/rustorb/blob/main/docs/tracing.md) |
 | Timeouts | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
 | SyncScope (oneway calls) | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
 | Callback AMI (C++, Java, Python) | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |

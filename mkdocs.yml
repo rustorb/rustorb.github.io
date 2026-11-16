@@ -58,6 +58,14 @@ plugins:
             ORB options: ORB オプション
             Naming service: ネーミングサービス
             More documentation: その他のドキュメント
+            Guides: ガイド
+            The POA: POA
+            Any and valuetypes: Any と valuetype
+            DII and DSI: DII と DSI
+            Callback AMI: コールバック AMI
+            Transports: 通信路
+            Timeouts and SyncScope: タイムアウトと SyncScope
+            Coming from omniORBpy: omniORBpy からの移行
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -101,6 +109,15 @@ nav:
       - C++: tutorial/cpp.md
       - Java: tutorial/java.md
       - Run them together: tutorial/together.md
+  - Guides:
+      - guides/index.md
+      - The POA: guides/poa.md
+      - Any and valuetypes: guides/any-valuetype.md
+      - DII and DSI: guides/dii-dsi.md
+      - Callback AMI: guides/ami.md
+      - Transports: guides/transports.md
+      - Timeouts and SyncScope: guides/timeouts.md
+      - Coming from omniORBpy: guides/omniorbpy.md
   - Reference:
       - ORB options: reference/orb-options.md
       - Naming service: reference/naming.md

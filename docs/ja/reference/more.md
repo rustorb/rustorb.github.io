@@ -1,5 +1,7 @@
 # その他のドキュメント
 
+機能ごとの使い方は[ガイド](../guides/index.md)にあります。
+
 設計ドキュメントは [rustorb のリポジトリ](https://github.com/rustorb/rustorb/tree/main/docs)にあります（ほとんどが日本語です）。
 
 | 内容 | ドキュメント |
@@ -16,6 +18,10 @@
 | DII / DSI | [dii-dsi.md](https://github.com/rustorb/rustorb/blob/main/docs/dii-dsi.md) |
 | SSLIOP | [ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md) |
 | Unix ドメインソケット（`giop:unix`） | [unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md) |
+| 双方向 GIOP | [bidir-giop.md](https://github.com/rustorb/rustorb/blob/main/docs/bidir-giop.md) |
+| 接続 | [connections.md](https://github.com/rustorb/rustorb/blob/main/docs/connections.md) |
+| Portable Interceptors | [portable-interceptors.md](https://github.com/rustorb/rustorb/blob/main/docs/portable-interceptors.md) |
+| トレース | [tracing.md](https://github.com/rustorb/rustorb/blob/main/docs/tracing.md) |
 | タイムアウト | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
 | SyncScope（oneway 呼び出し） | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
 | コールバック型 AMI（C++・Java・Python） | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
