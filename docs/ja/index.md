@@ -5,7 +5,7 @@
 
 # rustorb { .rustorb-sr-only }
 
-**Rust でコアを書いた CORBA ORB です。Rust、Python、C++、Java から使えます。**
+**Rust でコアを書いた CORBA ORB です。Rust、Python、C++、Java、C#、C、Ruby から使えます。**
 
 rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で GIOP 1.0〜1.2 を話し、omniORB、omniORBpy、JacORB とのあいだで、クライアント・サーバ・ネーミングサービスのすべての組み合わせをテストしています。既存システムの omniORB / omniORBpy を置き換えることを目指しており、Python バインディングは `omniidl -bpython` と同じ API を生成します。互換パッケージを使えば、OpenRTM-aist-Python のような omniORBpy のアプリケーションをそのまま動かせます。
 
@@ -17,7 +17,7 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 
 -   :material-download: **[インストール](install/index.md)**
 
-    Rust、Python、C++、Java のパッケージと、IDL コンパイラ、ネーミングサービス。
+    Rust、Python、C++、Java、.NET、C、Ruby のパッケージと、IDL コンパイラ、ネーミングサービス。
 
 -   :material-school: **[チュートリアル](tutorial/index.md)**
 
@@ -39,8 +39,8 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 - **サーバ側**: 標準ポリシーを備えた POA、サーバントマネージャ、デフォルトサーバント、アダプタアクティベータ、3 つのスレッドモデル、`POAManagerFactory`
 - **型**: Any、TypeCode、DynAny、`fixed`、`long double`、valuetype（custom、truncatable、box、`supports`）、abstract interface
 - **ネーミングサービス**: CosNaming のクライアントとサーバ、`rustorb-names` デーモン（永続化つきの omniNames の代替）
-- **非同期呼び出し**: Python・C++・Java のコールバック型 AMI（`sendc_` と返事のハンドラ、`rustorb-idl -Wbami`）、Rust の非同期 API
-- **その他**: DII / DSI（Rust・Python・C++・Java）、ポリシー、呼び出しタイムアウトと oneway の `SyncScope`、omniORBpy の `omniORB.URI`
+- **非同期呼び出し**: Python・C++・Java・C#・C・Ruby のコールバック型 AMI（`sendc_` と返事のハンドラ、`rustorb-idl -Wbami`）、Rust の非同期 API
+- **その他**: DII / DSI と Portable Interceptors（すべての言語）、ポリシー、呼び出しタイムアウトと oneway の `SyncScope`、omniORBpy の `omniORB.URI`
 
 ## 対応言語
 
@@ -50,8 +50,11 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 | Python 3.9+ | 標準の IDL to Python マッピング、omniORBpy と同じ配置 | `pip install rustorb` | `rustorb-idl -bpython` |
 | C++17 | IDL to C++11 | GitHub Release の `rustorb-native` | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java（`org.omg.*`）、FFM API 経由 | GitHub Release の `rustorb-<版>.jar` | `rustorb-idl -bjava` |
+| C#（.NET 8+） | IDL4 to C# | NuGet の `Rustorb` | `rustorb-idl -bcsharp` |
+| C99 | OMG の C マッピング | GitHub Release の `rustorb-c` | `rustorb-idl -bc` |
+| Ruby 3.0+ | OMG の Ruby マッピング（RCLM 1.2） | `gem install rustorb` | `rustorb-idl -bruby` |
 
-現在の版は **0.6.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.6.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.7.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.7.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 

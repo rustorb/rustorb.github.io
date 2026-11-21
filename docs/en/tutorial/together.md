@@ -25,14 +25,14 @@ The wire protocol is plain GIOP 1.2 over TCP, so omniORB, omniORBpy and
 JacORB programs join in the same way, and `omniNames` can take the place of
 `rustorb-names`.
 
-## All sixteen pairs
+## Every pair
 
-The repository has a script that builds the four examples and runs every
-server with every client against a fresh `rustorb-names`:
+The repository has a script that builds the examples of all seven languages
+and runs every server with every client against a fresh `rustorb-names`:
 
 ```sh
 git clone https://github.com/rustorb/rustorb && cd rustorb
-examples/run-all.sh                      # needs cargo, cmake, a C++ compiler, Python 3.9+, Java 22+ and Maven
+examples/run-all.sh                      # needs cargo, cmake, C and C++ compilers, Python 3.9+, Java 22+ and Maven, .NET 8, Ruby 3.0+
 EXAMPLES="rust python" examples/run-all.sh
 ```
 

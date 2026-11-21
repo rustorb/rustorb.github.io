@@ -2,7 +2,7 @@
 
 **コールバック型の AMI**（Asynchronous Method Invocation、CORBA Messaging の機能）では、クライアントは `<op>` の代わりに `sendc_<op>` を呼びます。呼び出しはすぐに戻り、返事が届くと、ORB がクライアントの実装した**応答ハンドラ**の同じ名前の操作を呼びます。サーバは関わりません。サーバから見れば普通の要求なので、AMI のクライアントはどのサーバとも動きます。
 
-rustorb では Python、C++、Java で、`rustorb-idl -Wbami`（rustorb-idl 0.3.0 以降）で生成したコードと一緒に使えます。Rust には代わりに [`async fn <op>_async`](https://github.com/rustorb/rustorb/blob/main/docs/async-api.md) があります。
+rustorb では Python、C++、Java、C#、C、Ruby で、`rustorb-idl -Wbami`（rustorb-idl 0.3.0 以降。C#・C・Ruby は 0.5.0 以降）で生成したコードと一緒に使えます。Rust には代わりに [`async fn <op>_async`](https://github.com/rustorb/rustorb/blob/main/docs/async-api.md) があります。
 
 ## `-Wbami` が生成するもの
 

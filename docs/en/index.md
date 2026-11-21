@@ -6,7 +6,7 @@
 # rustorb { .rustorb-sr-only }
 
 **A CORBA ORB with its core written in Rust, and bindings for Rust, Python,
-C++ and Java.**
+C++, Java, C#, C and Ruby.**
 
 rustorb speaks GIOP 1.0 to 1.2 over IIOP, SSLIOP and omniORB's Unix domain
 sockets, and is tested against
@@ -25,7 +25,7 @@ OpenRTM-aist-Python unchanged.
 
 -   :material-download: **[Install](install/index.md)**
 
-    The packages for Rust, Python, C++ and Java, the IDL compiler and the
+    The packages for Rust, Python, C++, Java, .NET, C and Ruby, the IDL compiler and the
     naming service.
 
 -   :material-school: **[Tutorial](tutorial/index.md)**
@@ -57,9 +57,9 @@ OpenRTM-aist-Python unchanged.
 - **Naming Service**: CosNaming client and server, and the `rustorb-names`
   daemon (a replacement for omniNames, with persistence)
 - **Asynchronous calls**: callback AMI (`sendc_` and reply handlers) for
-  Python, C++ and Java with `rustorb-idl -Wbami`, an optional async API for
+  Python, C++, Java, C#, C and Ruby with `rustorb-idl -Wbami`, an optional async API for
   Rust
-- **More**: DII / DSI (Rust, Python, C++ and Java), policies, call timeouts
+- **More**: DII / DSI and Portable Interceptors (every language), policies, call timeouts
   and `SyncScope` for oneway calls, omniORBpy's `omniORB.URI`
 
 ## Languages
@@ -70,8 +70,11 @@ OpenRTM-aist-Python unchanged.
 | Python 3.9+ | the standard IDL to Python mapping, omniORBpy layout | `pip install rustorb` | `rustorb-idl -bpython` |
 | C++17 | IDL to C++11 | `rustorb-native` from the GitHub release | `rustorb-idl -bc++11` |
 | Java 22+ | IDL to Java (`org.omg.*`), through the FFM API | `rustorb-<version>.jar` from the GitHub release | `rustorb-idl -bjava` |
+| C# (.NET 8+) | IDL4 to C# | NuGet `Rustorb` | `rustorb-idl -bcsharp` |
+| C99 | the OMG C mapping | `rustorb-c` from the GitHub release | `rustorb-idl -bc` |
+| Ruby 3.0+ | the OMG Ruby mapping (RCLM 1.2) | `gem install rustorb` | `rustorb-idl -bruby` |
 
-The current version is **0.6.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.6.0),
+The current version is **0.7.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.7.0),
 [changelog](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)).
 Before 1.0, a new minor version may change the API.
 

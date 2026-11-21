@@ -127,6 +127,6 @@ or rustorb in another language.
 
 - [Install](install/index.md) rustorb for the language you use.
 - Follow the [tutorial](tutorial/index.md): the same `Echo` in Rust,
-  Python, C++ and Java, found by name through the naming service instead of
+  Python, C++, Java, C#, C and Ruby, found by name through the naming service instead of
   an IOR file.
 - Coming from omniORBpy? See [Python](install/python.md#coming-from-omniorbpy).

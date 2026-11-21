@@ -25,8 +25,12 @@ guides show the rest of what rustorb does, one feature at a time:
 ## The examples
 
 The examples are in Python, because they are short and run in one file,
-and each guide lists the names of the same API in Rust, C++ and Java. The
-design documents linked from each guide (in Japanese) have the details.
+and each guide lists the names of the same API in Rust, C++ and Java. C#,
+C and Ruby follow their mappings; the binding documents
+([.NET](https://github.com/rustorb/rustorb/blob/main/docs/csharp-binding.md),
+[C](https://github.com/rustorb/rustorb/blob/main/docs/c-binding.md),
+[Ruby](https://github.com/rustorb/rustorb/blob/main/docs/ruby-binding.md))
+list the names. The design documents linked from each guide (in Japanese) have the details.
 
 They share one IDL file:
 

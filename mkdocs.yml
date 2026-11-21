@@ -1,5 +1,5 @@
 site_name: rustorb
-site_description: A CORBA ORB with its core written in Rust, for Rust, Python, C++ and Java
+site_description: A CORBA ORB with its core written in Rust, for Rust, Python, C++, Java, C#, C and Ruby
 site_url: https://rustorb.github.io/
 repo_url: https://github.com/rustorb/rustorb
 repo_name: rustorb/rustorb
@@ -47,7 +47,7 @@ plugins:
         - locale: ja
           name: 日本語
           build: true
-          site_description: Rust でコアを書いた CORBA ORB。Rust、Python、C++、Java から使えます
+          site_description: Rust でコアを書いた CORBA ORB。Rust、Python、C++、Java、C#、C、Ruby から使えます
           nav_translations:
             Home: ホーム
             Quick start: クイックスタート
@@ -102,12 +102,18 @@ nav:
       - Python: install/python.md
       - C++: install/cpp.md
       - Java: install/java.md
+      - .NET: install/csharp.md
+      - C: install/c.md
+      - Ruby: install/ruby.md
   - Tutorial:
       - tutorial/index.md
       - Rust: tutorial/rust.md
       - Python: tutorial/python.md
       - C++: tutorial/cpp.md
       - Java: tutorial/java.md
+      - C#: tutorial/csharp.md
+      - C: tutorial/c.md
+      - Ruby: tutorial/ruby.md
       - Run them together: tutorial/together.md
   - Guides:
       - guides/index.md

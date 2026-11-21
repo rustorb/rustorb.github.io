@@ -2,7 +2,7 @@
 
 **DII**（Dynamic Invocation Interface）は、クライアントが生成コードを持たない操作を呼び出します。操作の名前を指定し、引数を any で渡します。**DSI**（Dynamic Skeleton Interface）はそのサーバ側で、1 つのサーバントがすべての要求を `ServerRequest` として受け取り、引数を自分で読みます。ブリッジ、ゲートウェイ、スクリプトのツール、テストドライバなどで使います。DII のクライアントと DSI のサーバは、どの ORB の普通のスタブやサーバントとも話せます。線上では違いがありません。
 
-rustorb では Rust、Python、C++、Java のすべてで使えます。
+rustorb では Rust、Python、C++、Java、C#、C、Ruby のすべてで使えます。
 
 ## 例
 
