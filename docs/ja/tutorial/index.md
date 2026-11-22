@@ -1,6 +1,6 @@
 # チュートリアル
 
-このチュートリアルでは、小さなシステムを各言語で作ります。IDL のインタフェースを実装してネーミングサービスに `Echo` という名前で登録する**サーバ**と、`Echo` を探して呼び出す**クライアント**です。4 つのサーバと 4 つのクライアントは入れ替えが利き、どのクライアントもどのサーバとつながります。omniORB、omniORBpy、JacORB のものともつながります。
+このチュートリアルでは、小さなシステムを各言語で作ります。IDL のインタフェースを実装してネーミングサービスに `Echo` という名前で登録する**サーバ**と、`Echo` を探して呼び出す**クライアント**です。サーバとクライアントは入れ替えが利き、どのクライアントもどのサーバとつながります。omniORB、omniORBpy、JacORB のものともつながります。
 
 同じプログラムがリポジトリの[examples/](https://github.com/rustorb/rustorb/tree/main/examples) にあり、CI ですべてのサーバとすべてのクライアントの組み合わせを動かしています。
 
@@ -52,6 +52,9 @@ module Example {
 -   **[Python](python.md)**: `pip install rustorb`、omniORBpy と同じ配置
 -   **[C++](cpp.md)**: IDL to C++11 マッピング、CMake
 -   **[Java](java.md)**: IDL to Java マッピング、Java 22 以降
+-   **[C#](csharp.md)**: IDL4 to C# マッピング、NuGet
+-   **[C](c.md)**: OMG の C マッピング、C99
+-   **[Ruby](ruby.md)**: OMG の Ruby マッピング、`gem install rustorb`
 
 </div>
 

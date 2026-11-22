@@ -8,7 +8,7 @@ the arguments itself. Bridges, gateways, scripting tools and test drivers
 use them. A DII client and a DSI server talk to ordinary stubs and
 servants of any ORB; the wire does not show the difference.
 
-rustorb has both in Rust, Python, C++ and Java.
+rustorb has both in Rust, Python, C++, Java, C#, C and Ruby.
 
 ## Example
 

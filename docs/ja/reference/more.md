@@ -12,6 +12,9 @@
 | omniORBpy 互換 | [omniorb-compat.md](https://github.com/rustorb/rustorb/blob/main/docs/omniorb-compat.md) |
 | C++ バインディング | [cpp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/cpp-binding.md) |
 | Java バインディング | [java-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/java-binding.md), [FFM](https://github.com/rustorb/rustorb/blob/main/docs/java-ffm.md) |
+| .NET バインディング | [csharp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/csharp-binding.md) |
+| C バインディング | [c-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/c-binding.md) |
+| Ruby バインディング | [ruby-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/ruby-binding.md) |
 | POA | [poa-design.md](https://github.com/rustorb/rustorb/blob/main/docs/poa-design.md) |
 | Any と TypeCode | [any-typecode.md](https://github.com/rustorb/rustorb/blob/main/docs/any-typecode.md), [DynAny](https://github.com/rustorb/rustorb/blob/main/docs/dynany.md) |
 | valuetype | [valuetype.md](https://github.com/rustorb/rustorb/blob/main/docs/valuetype.md) |
@@ -24,7 +27,7 @@
 | トレース | [tracing.md](https://github.com/rustorb/rustorb/blob/main/docs/tracing.md) |
 | タイムアウト | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
 | SyncScope（oneway 呼び出し） | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
-| コールバック型 AMI（C++・Java・Python） | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
+| コールバック型 AMI | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | 相互接続テスト | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | リリース | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |
 

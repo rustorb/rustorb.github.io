@@ -14,6 +14,9 @@ The design documents live in the
 | omniORBpy compatibility | [omniorb-compat.md](https://github.com/rustorb/rustorb/blob/main/docs/omniorb-compat.md) |
 | C++ binding | [cpp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/cpp-binding.md) |
 | Java binding | [java-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/java-binding.md), [FFM](https://github.com/rustorb/rustorb/blob/main/docs/java-ffm.md) |
+| .NET binding | [csharp-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/csharp-binding.md) |
+| C binding | [c-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/c-binding.md) |
+| Ruby binding | [ruby-binding.md](https://github.com/rustorb/rustorb/blob/main/docs/ruby-binding.md) |
 | POA | [poa-design.md](https://github.com/rustorb/rustorb/blob/main/docs/poa-design.md) |
 | Any and TypeCode | [any-typecode.md](https://github.com/rustorb/rustorb/blob/main/docs/any-typecode.md), [DynAny](https://github.com/rustorb/rustorb/blob/main/docs/dynany.md) |
 | Valuetypes | [valuetype.md](https://github.com/rustorb/rustorb/blob/main/docs/valuetype.md) |
@@ -26,7 +29,7 @@ The design documents live in the
 | Tracing | [tracing.md](https://github.com/rustorb/rustorb/blob/main/docs/tracing.md) |
 | Timeouts | [timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md) |
 | SyncScope (oneway calls) | [sync-scope.md](https://github.com/rustorb/rustorb/blob/main/docs/sync-scope.md) |
-| Callback AMI (C++, Java, Python) | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
+| Callback AMI | [ami.md](https://github.com/rustorb/rustorb/blob/main/docs/ami.md) |
 | Interoperability tests | [interop/](https://github.com/rustorb/rustorb/tree/main/interop) |
 | Releases | [CHANGELOG.md](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md), [release.md](https://github.com/rustorb/rustorb/blob/main/docs/release.md) |
 

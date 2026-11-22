@@ -3,7 +3,7 @@
 This tutorial builds one small system in each language: a **server** that
 implements an IDL interface and registers it in the naming service under
 the name `Echo`, and a **client** that looks `Echo` up and calls it. The
-four servers and four clients are interchangeable: every client works with
+servers and clients are interchangeable: every client works with
 every server, and with omniORB, omniORBpy and JacORB ones.
 
 The same programs are in the repository under
@@ -62,6 +62,9 @@ module Example {
 -   **[Python](python.md)**: `pip install rustorb`, the omniORBpy layout
 -   **[C++](cpp.md)**: the IDL to C++11 mapping, CMake
 -   **[Java](java.md)**: the IDL to Java mapping, Java 22+
+-   **[C#](csharp.md)**: the IDL4 to C# mapping, NuGet
+-   **[C](c.md)**: the OMG C mapping, C99
+-   **[Ruby](ruby.md)**: the OMG Ruby mapping, `gem install rustorb`
 
 </div>
 

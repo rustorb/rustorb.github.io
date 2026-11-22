@@ -116,5 +116,5 @@ hello, rustorb
 ## 次に
 
 - 使う言語向けに rustorb を[インストール](install/index.md)します。
-- [チュートリアル](tutorial/index.md)では、同じ `Echo` を Rust、Python、C++、Java で書き、IOR ファイルではなくネーミングサービスで名前から探します。
+- [チュートリアル](tutorial/index.md)では、同じ `Echo` を Rust、Python、C++、Java、C#、C、Ruby で書き、IOR ファイルではなくネーミングサービスで名前から探します。
 - omniORBpy から移行する場合は [Python](install/python.md#coming-from-omniorbpy) を見てください。

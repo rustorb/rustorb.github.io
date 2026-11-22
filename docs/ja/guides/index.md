@@ -16,7 +16,7 @@
 
 ## 例について
 
-例は Python で書いています。短く、1 つのファイルで動くからです。各ガイドには、同じ API の Rust、C++、Java での名前の表があります。詳しいことは各ガイドからリンクしている設計ドキュメントにあります。
+例は Python で書いています。短く、1 つのファイルで動くからです。各ガイドには、同じ API の Rust、C++、Java での名前の表があります。C#・C・Ruby はそれぞれのマッピングに従い、名前はバインディングのドキュメント（[.NET](https://github.com/rustorb/rustorb/blob/main/docs/csharp-binding.md)、[C](https://github.com/rustorb/rustorb/blob/main/docs/c-binding.md)、[Ruby](https://github.com/rustorb/rustorb/blob/main/docs/ruby-binding.md)）にあります。詳しいことは各ガイドからリンクしている設計ドキュメントにあります。
 
 例はすべて次の IDL を使います。
 

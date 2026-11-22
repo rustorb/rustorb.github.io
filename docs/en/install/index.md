@@ -10,6 +10,9 @@ your language.
 | [Python](python.md) | `pip install rustorb` | CPython 3.9+ |
 | [C++](cpp.md) | `rustorb-native` archive from the GitHub release | a C++17 compiler, CMake 3.16+ |
 | [Java](java.md) | `rustorb-<version>.jar` and `rustorb-native` from the GitHub release | Java 22+ |
+| [.NET](csharp.md) | `dotnet add package Rustorb` | .NET 8+ |
+| [C](c.md) | `rustorb-c` archive from the GitHub release | a C99 compiler |
+| [Ruby](ruby.md) | `gem install rustorb` | Ruby 3.0+ with its headers, a C compiler |
 
 ## The IDL compiler: rustorb-idl
 
@@ -30,6 +33,9 @@ backend per language:
 | `-bpython` | Python, in the layout of `omniidl -bpython` |
 | `-bc++11` | C++ (IDL to C++11 mapping) |
 | `-bjava` | Java (IDL to Java mapping) |
+| `-bcsharp` | C# (IDL4 to C# mapping) |
+| `-bc` | C (OMG C mapping) |
+| `-bruby` | Ruby (OMG Ruby mapping) |
 
 `-C DIR` writes the output into `DIR` (create it first), and `-I DIR` adds
 an include directory. The IDL of the naming service, `CosNaming.idl`,
@@ -37,7 +43,7 @@ comes with it: `rustorb-idl --idl-dir` prints the directory it is in, which
 is also searched for `#include "CosNaming.idl"`.
 
 !!! tip "Keep it in a virtual environment"
-    For C++, Java and Rust projects, `rustorb-idl` only has to be on `PATH`
+    For C++, Java, .NET, C, Ruby and Rust projects, `rustorb-idl` only has to be on `PATH`
     at build time. `pipx install rustorb-idl` is a convenient way to get it
     there without a virtual environment. Build tools also accept its path
     in the `RUSTORB_IDL` environment variable.
@@ -56,9 +62,9 @@ Without one, take the prebuilt binary from the
 put it on `PATH`:
 
 ```sh
-curl -LO https://github.com/rustorb/rustorb/releases/download/v0.6.0/rustorb-names-0.6.0-linux-x86_64.tar.gz
-tar xzf rustorb-names-0.6.0-linux-x86_64.tar.gz
-./rustorb-names-0.6.0-linux-x86_64/rustorb-names -memory -start 2809
+curl -LO https://github.com/rustorb/rustorb/releases/download/v0.7.0/rustorb-names-0.7.0-linux-x86_64.tar.gz
+tar xzf rustorb-names-0.7.0-linux-x86_64.tar.gz
+./rustorb-names-0.7.0-linux-x86_64/rustorb-names -memory -start 2809
 ```
 
 Any
@@ -69,18 +75,21 @@ options.
 
 ## Release files
 
-The C++ and Java packages, and copies of the Python wheels and crates, are
+The C++, Java and C packages, and copies of the Python wheels, crates, NuGet package and gem, are
 attached to each [GitHub release](https://github.com/rustorb/rustorb/releases)
-with a `SHA256SUMS` file. For 0.6.0:
+with a `SHA256SUMS` file. For 0.7.0:
 
 | File | Contents |
 | --- | --- |
-| `rustorb-native-0.6.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package, `bin/rustorb-names` |
-| `rustorb-native-0.6.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
-| `rustorb-native-0.6.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
-| `rustorb-native-0.6.0-windows-x86_64.zip` | the same, for Windows x64 |
-| `rustorb-names-0.6.0-<platform>.tar.gz` / `.zip` | the `rustorb-names` naming service alone, for the same four platforms |
-| `rustorb-0.6.0.jar` | the Java mapping |
+| `rustorb-native-0.7.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package, `bin/rustorb-names` |
+| `rustorb-native-0.7.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
+| `rustorb-native-0.7.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
+| `rustorb-native-0.7.0-windows-x86_64.zip` | the same, for Windows x64 |
+| `rustorb-names-0.7.0-<platform>.tar.gz` / `.zip` | the `rustorb-names` naming service alone, for the same four platforms |
+| `rustorb-0.7.0.jar` | the Java mapping |
+| `rustorb-c-0.7.0-<platform>.tar.gz` | the C mapping: headers, `librustorb_c.a`, `librustorb_ffi.a` (Linux x86_64 and aarch64, macOS) |
+| `Rustorb.0.7.0.nupkg` | the .NET package, also on nuget.org |
+| `rustorb-0.7.0.gem` | the Ruby gem, also on rubygems.org |
 
 ## From source
 

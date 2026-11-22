@@ -21,13 +21,13 @@ client: hello from Python
 
 通信は TCP 上の素の GIOP 1.2 なので、omniORB、omniORBpy、JacORB のプログラムも同じように加われます。`rustorb-names` の代わりに `omniNames` を使うこともできます。
 
-## 16 通りすべて
+## すべての組
 
-リポジトリには、4 つの例をビルドし、新しく起動した `rustorb-names` に対してすべてのサーバとすべてのクライアントを動かすスクリプトがあります。
+リポジトリには、7 つの言語の例をビルドし、新しく起動した `rustorb-names` に対してすべてのサーバとすべてのクライアントを動かすスクリプトがあります。
 
 ```sh
 git clone https://github.com/rustorb/rustorb && cd rustorb
-examples/run-all.sh                      # cargo、cmake、C++ コンパイラ、Python 3.9+、Java 22+、Maven が必要
+examples/run-all.sh                      # cargo、cmake、C と C++ のコンパイラ、Python 3.9+、Java 22+ と Maven、.NET 8、Ruby 3.0+ が必要
 EXAMPLES="rust python" examples/run-all.sh
 ```
 
