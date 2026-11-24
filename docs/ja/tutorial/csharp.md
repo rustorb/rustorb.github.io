@@ -7,8 +7,8 @@
 サーバとクライアントを、`Rustorb` パッケージを使うコンソールのプロジェクトとして作ります。
 
 ```sh
-dotnet new console -o server && dotnet add server package Rustorb --version 0.7.0
-dotnet new console -o client && dotnet add client package Rustorb --version 0.7.0
+dotnet new console -o server && dotnet add server package Rustorb --version 0.7.1
+dotnet new console -o client && dotnet add client package Rustorb --version 0.7.1
 rustorb-idl -bcsharp -C gen Echo.idl
 ```
 
