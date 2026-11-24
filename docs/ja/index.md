@@ -54,7 +54,7 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 | C99 | OMG の C マッピング | GitHub Release の `rustorb-c` | `rustorb-idl -bc` |
 | Ruby 3.0+ | OMG の Ruby マッピング（RCLM 1.2） | `gem install rustorb` | `rustorb-idl -bruby` |
 
-現在の版は **0.7.0** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.7.0)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
+現在の版は **0.7.1** です（[リリースノート](https://github.com/rustorb/rustorb/releases/tag/v0.7.1)、[変更履歴](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)）。1.0 までは、マイナーバージョンが上がると API が変わることがあります。
 
 ## ライセンス
 
