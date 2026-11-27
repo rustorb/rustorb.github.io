@@ -11,6 +11,7 @@
 -   **[通信路](transports.md)**: TLS、Unix ドメインソケット、クライアントの接続を使ったコールバック、NAT の内側のアドレス
 -   **[タイムアウトと SyncScope](timeouts.md)**: 呼び出しが待つ時間と、oneway 呼び出しが戻るとき
 -   **[omniORBpy からの移行](omniorbpy.md)**: omniORBpy のアプリケーションを rustorb で動かす
+-   **[速さと調整](tuning.md)**: 呼び出しを速くしている仕組み、それを変えるオプション、octet の列を `Octets` や String で受け取る方法
 
 </div>
 

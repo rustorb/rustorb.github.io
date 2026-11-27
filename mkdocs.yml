@@ -66,6 +66,7 @@ plugins:
             Transports: 通信路
             Timeouts and SyncScope: タイムアウトと SyncScope
             Coming from omniORBpy: omniORBpy からの移行
+            Speed and tuning: 速さと調整
             Getting started: はじめに
             Interoperability: 相互接続と規格
             Performance: 性能
@@ -127,6 +128,7 @@ nav:
       - Transports: guides/transports.md
       - Timeouts and SyncScope: guides/timeouts.md
       - Coming from omniORBpy: guides/omniorbpy.md
+      - Speed and tuning: guides/tuning.md
   - Reference:
       - ORB options: reference/orb-options.md
       - Naming service: reference/naming.md
