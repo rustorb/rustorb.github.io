@@ -31,6 +31,10 @@ rustorb は IIOP、SSLIOP、omniORB の Unix ドメインソケットの上で G
 
     ORB オプション、ネーミングサービス、設計ドキュメント。
 
+-   :material-access-point-network: **[DDS](dds/index.md)**
+
+    同じプロジェクトの DDS 実装 rustorb-dds。RTPS、XTypes、DDS Security を備え、Cyclone DDS、Fast DDS、OpenDDS、ROS 2 との相互接続を確かめています。
+
 </div>
 
 ## できること

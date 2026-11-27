@@ -1,5 +1,5 @@
 site_name: rustorb
-site_description: A CORBA ORB with its core written in Rust, for Rust, Python, C++, Java, C#, C and Ruby
+site_description: A CORBA ORB and a DDS implementation with their cores written in Rust, for Rust, Python, C++, Java, C#, C and Ruby
 site_url: https://rustorb.github.io/
 repo_url: https://github.com/rustorb/rustorb
 repo_name: rustorb/rustorb
@@ -47,7 +47,7 @@ plugins:
         - locale: ja
           name: 日本語
           build: true
-          site_description: Rust でコアを書いた CORBA ORB。Rust、Python、C++、Java、C#、C、Ruby から使えます
+          site_description: Rust でコアを書いた CORBA ORB と DDS。Rust、Python、C++、Java、C#、C、Ruby から使えます
           nav_translations:
             Home: ホーム
             Quick start: クイックスタート
@@ -66,6 +66,9 @@ plugins:
             Transports: 通信路
             Timeouts and SyncScope: タイムアウトと SyncScope
             Coming from omniORBpy: omniORBpy からの移行
+            Getting started: はじめに
+            Interoperability: 相互接続と規格
+            Performance: 性能
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -128,3 +131,9 @@ nav:
       - ORB options: reference/orb-options.md
       - Naming service: reference/naming.md
       - More documentation: reference/more.md
+  - DDS:
+      - dds/index.md
+      - Install: dds/install.md
+      - Getting started: dds/getting-started.md
+      - Interoperability: dds/interop.md
+      - Performance: dds/performance.md
