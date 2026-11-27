@@ -42,6 +42,12 @@ OpenRTM-aist-Python unchanged.
 
     ORB options, the naming service, and the design documents.
 
+-   :material-access-point-network: **[DDS](dds/index.md)**
+
+    rustorb-dds, a DDS implementation from the same project: RTPS,
+    XTypes and DDS Security, tested with Cyclone DDS, Fast DDS, OpenDDS and
+    ROS 2.
+
 </div>
 
 ## What is in it
