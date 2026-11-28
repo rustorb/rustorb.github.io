@@ -7,10 +7,10 @@ IDL からコードを生成するために [`rustorb-idl`](index.md#the-idl-com
 ## gem を入れる
 
 ```sh
-gem install rustorb -v 0.7.1
+gem install rustorb -v 0.8.0
 ```
 
-Bundler なら `Gemfile` に `gem "rustorb", "~> 0.7"` と書きます。Debian と Ubuntu では、ヘッダは `ruby-dev`、コンパイラは `build-essential` に入っています。ほかのプラットフォームでは、ソースから `librustorb_ffi.a` をビルドし（下記）、そのパスを渡します。
+Bundler なら `Gemfile` に `gem "rustorb", "~> 0.8"` と書きます。Debian と Ubuntu では、ヘッダは `ruby-dev`、コンパイラは `build-essential` に入っています。ほかのプラットフォームでは、ソースから `librustorb_ffi.a` をビルドし（下記）、そのパスを渡します。
 
 ```sh
 RUSTORB_FFI_LIBRARY=/path/to/librustorb_ffi.a \

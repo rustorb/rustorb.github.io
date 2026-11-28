@@ -14,7 +14,7 @@ or later to generate code from IDL.
 
 ```sh
 dotnet new console -o EchoServer && cd EchoServer
-dotnet add package Rustorb --version 0.7.1
+dotnet add package Rustorb --version 0.8.0
 ```
 
 The native library is in the package under `runtimes/<rid>/native`, so

@@ -9,8 +9,8 @@ naming service running and `Echo.idl` written ([Tutorial](index.md), steps
 A server and a client, each a console project with the `Rustorb` package:
 
 ```sh
-dotnet new console -o server && dotnet add server package Rustorb --version 0.7.1
-dotnet new console -o client && dotnet add client package Rustorb --version 0.7.1
+dotnet new console -o server && dotnet add server package Rustorb --version 0.8.0
+dotnet new console -o client && dotnet add client package Rustorb --version 0.8.0
 rustorb-idl -bcsharp -C gen Echo.idl
 ```
 

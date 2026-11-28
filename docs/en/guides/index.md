@@ -19,6 +19,8 @@ guides show the rest of what rustorb does, one feature at a time:
     when a oneway call returns
 -   **[Coming from omniORBpy](omniorbpy.md)**: running omniORBpy
     applications on rustorb
+-   **[Speed and tuning](tuning.md)**: what makes calls fast, the
+    options that change it, and octet sequences as `Octets` or Strings
 
 </div>
 

@@ -13,10 +13,10 @@ or later to generate code from IDL.
 ## Install the gem
 
 ```sh
-gem install rustorb -v 0.7.1
+gem install rustorb -v 0.8.0
 ```
 
-or, with Bundler, `gem "rustorb", "~> 0.7"` in the `Gemfile`. On Debian and
+or, with Bundler, `gem "rustorb", "~> 0.8"` in the `Gemfile`. On Debian and
 Ubuntu the headers are in `ruby-dev`; `build-essential` has the compiler.
 On another platform, build `librustorb_ffi.a` from source (below) and point
 the build at it:

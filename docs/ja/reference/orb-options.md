@@ -12,6 +12,10 @@
 | `-ORBclientCallTimeOutPeriod MS` | すべての呼び出しのタイムアウト（[timeouts.md](https://github.com/rustorb/rustorb/blob/main/docs/timeouts.md)） |
 | `-ORBendPoint giop:ssl:HOST:PORT`、`-ORBsslCAFile FILE`、`-ORBsslKeyFile FILE` | SSLIOP（TLS 上の IIOP。[ssliop.md](https://github.com/rustorb/rustorb/blob/main/docs/ssliop.md)） |
 | `-ORBendPoint giop:unix:PATH` | omniORB と同じ Unix ドメインソケット（Linux と macOS）。`PATH` が空なら `/tmp/omni-USER/` に、`/` で終わればそのディレクトリに作ります。同じホストのクライアントは TCP より先にこれを使います（[unix-transport.md](https://github.com/rustorb/rustorb/blob/main/docs/unix-transport.md)） |
+| `-ORBmaxConnectionsPerServer N` | 1 つのサーバーのエンドポイントへの接続の上限（既定 4。`-ORBmaxGIOPConnectionPerServer` も可） |
+| `-ORBfollowLinger US`、`-ORBfollowLimit N` | スレッドが接続を自分で読み続ける時間と要求の数（[速さと調整](../guides/tuning.md)） |
+| `-ORBmaxServerThreadPoolSize N` | アップコールのスレッドの上限（既定 100） |
+| `-ORBstatistics 1` | ORB の中の動きを数える |
 
 オプション名は omniORB と同じなので、既存のコマンドラインやスクリプトはそのまま使えます。
 
