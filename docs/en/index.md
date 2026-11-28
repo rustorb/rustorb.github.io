@@ -80,7 +80,7 @@ OpenRTM-aist-Python unchanged.
 | C99 | the OMG C mapping | `rustorb-c` from the GitHub release | `rustorb-idl -bc` |
 | Ruby 3.0+ | the OMG Ruby mapping (RCLM 1.2) | `gem install rustorb` | `rustorb-idl -bruby` |
 
-The current version is **0.7.1** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.7.1),
+The current version is **0.8.0** ([release notes](https://github.com/rustorb/rustorb/releases/tag/v0.8.0),
 [changelog](https://github.com/rustorb/rustorb/blob/main/CHANGELOG.md)).
 Before 1.0, a new minor version may change the API.
 

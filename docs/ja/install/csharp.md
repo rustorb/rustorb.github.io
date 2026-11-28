@@ -8,7 +8,7 @@ IDL からコードを生成するために [`rustorb-idl`](index.md#the-idl-com
 
 ```sh
 dotnet new console -o EchoServer && cd EchoServer
-dotnet add package Rustorb --version 0.7.1
+dotnet add package Rustorb --version 0.8.0
 ```
 
 ネイティブライブラリはパッケージの `runtimes/<rid>/native` に入っているので、`dotnet run` や `dotnet publish -r <rid>` で見つかります。別にビルドしたものを使うときは、環境変数 `RUSTORB_FFI_LIBRARY` にファイルのパスを入れます。ライブラリは次の順に探されます。

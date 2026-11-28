@@ -62,9 +62,9 @@ Without one, take the prebuilt binary from the
 put it on `PATH`:
 
 ```sh
-curl -LO https://github.com/rustorb/rustorb/releases/download/v0.7.1/rustorb-names-0.7.1-linux-x86_64.tar.gz
-tar xzf rustorb-names-0.7.1-linux-x86_64.tar.gz
-./rustorb-names-0.7.1-linux-x86_64/rustorb-names -memory -start 2809
+curl -LO https://github.com/rustorb/rustorb/releases/download/v0.8.0/rustorb-names-0.8.0-linux-x86_64.tar.gz
+tar xzf rustorb-names-0.8.0-linux-x86_64.tar.gz
+./rustorb-names-0.8.0-linux-x86_64/rustorb-names -memory -start 2809
 ```
 
 Any
@@ -77,21 +77,21 @@ options.
 
 The C++, Java and C packages, and copies of the Python wheels, crates, NuGet package and gem, are
 attached to each [GitHub release](https://github.com/rustorb/rustorb/releases)
-with a `SHA256SUMS` file. For 0.7.1:
+with a `SHA256SUMS` file. For 0.8.0:
 
 | File | Contents |
 | --- | --- |
-| `rustorb-native-0.7.1-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package, `bin/rustorb-names` |
-| `rustorb-native-0.7.1-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
-| `rustorb-native-0.7.1-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
-| `rustorb-native-0.7.1-windows-x86_64.zip` | the same, for Windows x64 |
-| `rustorb-names-0.7.1-<platform>.tar.gz` / `.zip` | the `rustorb-names` naming service alone, for the same four platforms |
-| `rustorb-0.7.1.jar` | the Java mapping |
-| `rustorb-c-0.7.1-<platform>.tar.gz` | the C mapping: headers, `librustorb_c.a`, `librustorb_ffi.a` (Linux x86_64 and aarch64, macOS) |
-| `rustorb-c-0.7.1-windows-x86_64.zip` | the C mapping for Windows x64: headers, `rustorb_c.lib`, `rustorb_ffi.lib` (MSVC) |
-| `Rustorb.0.7.1.nupkg` | the .NET package, also on nuget.org |
-| `Rustorb.Types.0.7.1.nupkg` | the IDL types (`Omg.Types`) that `Rustorb` depends on, also on nuget.org |
-| `rustorb-0.7.1.gem` | the Ruby gem, also on rubygems.org |
+| `rustorb-native-0.8.0-linux-x86_64.tar.gz` | `librustorb_ffi` (static and shared), C++ headers, CMake package, `bin/rustorb-names` |
+| `rustorb-native-0.8.0-linux-aarch64.tar.gz` | the same, for Linux on 64-bit ARM |
+| `rustorb-native-0.8.0-macos-aarch64.tar.gz` | the same, for macOS on Apple silicon |
+| `rustorb-native-0.8.0-windows-x86_64.zip` | the same, for Windows x64 |
+| `rustorb-names-0.8.0-<platform>.tar.gz` / `.zip` | the `rustorb-names` naming service alone, for the same four platforms |
+| `rustorb-0.8.0.jar` | the Java mapping |
+| `rustorb-c-0.8.0-<platform>.tar.gz` | the C mapping: headers, `librustorb_c.a`, `librustorb_ffi.a` (Linux x86_64 and aarch64, macOS) |
+| `rustorb-c-0.8.0-windows-x86_64.zip` | the C mapping for Windows x64: headers, `rustorb_c.lib`, `rustorb_ffi.lib` (MSVC) |
+| `Rustorb.0.8.0.nupkg` | the .NET package, also on nuget.org |
+| `Rustorb.Types.0.8.0.nupkg` | the IDL types (`Omg.Types`) that `Rustorb` depends on, also on nuget.org |
+| `rustorb-0.8.0.gem` | the Ruby gem, also on rubygems.org |
 
 ## From source
 

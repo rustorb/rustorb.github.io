@@ -13,7 +13,7 @@ or later to generate code from IDL.
 ## Install the gem
 
 ```sh
-gem install rustorb -v 0.7.1
+gem install rustorb -v 0.8.0
 ```
 
 or, with Bundler, `gem "rustorb", "~> 0.7"` in the `Gemfile`. On Debian and

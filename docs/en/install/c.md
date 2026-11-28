@@ -3,7 +3,7 @@
 The C binding is the OMG C Language Mapping 1.0 on the rustorb library:
 `librustorb_c`, the `CORBA_*`, `PortableServer_*` and `CosNaming_*` APIs in
 C99. It comes as an archive per platform on the
-[release](https://github.com/rustorb/rustorb/releases/tag/v0.7.1), with the
+[release](https://github.com/rustorb/rustorb/releases/tag/v0.8.0), with the
 headers and two static libraries, `librustorb_c.a` and `librustorb_ffi.a`
 (`rustorb_c.lib` and `rustorb_ffi.lib` on Windows). It needs a C99
 compiler; on Windows, MSVC.
@@ -14,17 +14,17 @@ or later to generate code from IDL.
 ## Download
 
 ```sh
-curl -LO https://github.com/rustorb/rustorb/releases/download/v0.7.1/rustorb-c-0.7.1-linux-x86_64.tar.gz
-tar xzf rustorb-c-0.7.1-linux-x86_64.tar.gz
-PREFIX=$PWD/rustorb-c-0.7.1-linux-x86_64
+curl -LO https://github.com/rustorb/rustorb/releases/download/v0.8.0/rustorb-c-0.8.0-linux-x86_64.tar.gz
+tar xzf rustorb-c-0.8.0-linux-x86_64.tar.gz
+PREFIX=$PWD/rustorb-c-0.8.0-linux-x86_64
 ```
 
 | Platform | Archive |
 | --- | --- |
-| Linux x86_64 | `rustorb-c-0.7.1-linux-x86_64.tar.gz` |
-| Linux aarch64 | `rustorb-c-0.7.1-linux-aarch64.tar.gz` |
-| macOS (Apple silicon) | `rustorb-c-0.7.1-macos-aarch64.tar.gz` |
-| Windows x64 (MSVC) | `rustorb-c-0.7.1-windows-x86_64.zip` (since 0.7.1) |
+| Linux x86_64 | `rustorb-c-0.8.0-linux-x86_64.tar.gz` |
+| Linux aarch64 | `rustorb-c-0.8.0-linux-aarch64.tar.gz` |
+| macOS (Apple silicon) | `rustorb-c-0.8.0-macos-aarch64.tar.gz` |
+| Windows x64 (MSVC) | `rustorb-c-0.8.0-windows-x86_64.zip` (since 0.8.0) |
 
 Each has `include/rustorb/` (`orb.h`, `poa.h`, `CosNaming.h`, `dii.h`,
 `dynany.h`, `messaging.h`, `pi.h` and the C ABI's `rustorb.h`) and
@@ -57,7 +57,7 @@ target_link_libraries(server PRIVATE
 ```
 
 ```powershell
-cmake -S . -B build -DRUSTORB_C_PREFIX="$PWD\rustorb-c-0.7.1-windows-x86_64"
+cmake -S . -B build -DRUSTORB_C_PREFIX="$PWD\rustorb-c-0.8.0-windows-x86_64"
 cmake --build build --config Release        # build\Release\server.exe
 ```
 
